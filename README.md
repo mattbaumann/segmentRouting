@@ -17,7 +17,7 @@ Underneath the MPLS overlay network needs to be a traditional network infrastruc
 
 ## Segment Routing
 
-![Segment Routing Example](assets/SegmentRouting.png)
+![Segment Routing Example](./images/SegmentRouting.png)
 
 *Segment Routing* enhances MPLS with a route controller. The controller may define MPLS routes for individual endpoints, applications, failures or priorities. Those rules are stored in the controller as *sr policy*. The controller sends BGP updates, to control the packet flows according to the policy, in real time. 
 
