@@ -22,3 +22,20 @@ Underneath the MPLS overlay network needs to be a traditional network infrastruc
 *Segment Routing* enhances MPLS with a route controller. The controller may define MPLS routes for individual endpoints, applications, failures or priorities. Those rules are stored in the controller as *sr policy*. The controller sends BGP updates, to control the packet flows according to the policy, in real time. 
 
 Our application is able to message with the controller over a RESTful HTTP protocol. The controller solves the real-time constraints of BGP and allows our application to focus on rule definition and analysis.
+
+## REST Command
+
+Die erste Aufgabenstellung ist diesen Command aus Aufgabenstellung 10 zum laufen zu bringen:
+
+``` js
+{
+	"source": "10.10.10.10",
+	"end-point": "5.5.5.5",
+	"binding-sid": 902000,
+	"color": 10,
+	"preference": 100,
+	"route-distinguisher": 2,
+	"path-list": [{"label-stack": [16006, 16005], "weight": 1}]
+}
+
+```
