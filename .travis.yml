@@ -4,7 +4,7 @@ before_install:
         - npm i -g vuepress
 node_js:
         - "node"
-script: "docs:build"
+script: "npm run docs:build"
 deploy:
   provider: pages
   project-name: "Segment Routing"
