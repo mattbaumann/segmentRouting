@@ -1,0 +1,25 @@
+{
+  "name": "segmentrouting",
+  "version": "1.0.0",
+  "description": "Challenge Project Segment Routing",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbaumann/segmentRouting.git"
+  },
+  "author": "Matt Baumann and Luca Gubler",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mattbaumann/segmentRouting/issues"
+  },
+  "homepage": "https://github.com/mattbaumann/segmentRouting#readme",
+  "dependencies": {
+    "vuepress": "^0.14.9"
+  }
+}

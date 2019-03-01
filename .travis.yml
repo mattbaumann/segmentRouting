@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+        - "node"
+script: "docs:build"
+deploy:
+  provider: pages
+  project-name: "Segment Routing"
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+  local-dir: ".vuepress/dist"
+
