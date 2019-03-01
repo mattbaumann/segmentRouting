@@ -1,4 +1,7 @@
 language: node_js
+
+before_install:
+        - npm i -g vuepress
 node_js:
         - "node"
 script: "docs:build"
