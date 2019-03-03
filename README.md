@@ -23,6 +23,16 @@ Underneath the MPLS overlay network needs to be a traditional network infrastruc
 
 Our application is able to message with the controller over a RESTful HTTP protocol. The controller solves the real-time constraints of BGP and allows our application to focus on rule definition and analysis.
 
+## Network
+
+![Segment Routing Example](./images/SegmentRouting.png)
+
+We control the *AS64002* with the XTC-C controller. 
+
+*ISIS* is used as a routing protocol over the entire network. *AS64002* is separated in two ISIS routing areas. 
+
+Over ISIS is an MPLS network overlay (data plane) with an BGP (control plane)  for label distribution. 
+
 ## REST Command
 
 Die erste Aufgabenstellung ist diesen Command aus Aufgabenstellung 10 zum laufen zu bringen:
