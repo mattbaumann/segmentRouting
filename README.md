@@ -7,7 +7,10 @@ lang: en-US
 
 This documentation can be viewed with [VuePress](https://vuepress.vuejs.org) or under the [public website](https://mattbaumann.github.io/segmentRouting/).
 
-
+## Open Questions
+* [ ] Where can we test our routes?
+* [ ] At which address are the routers?
+* [ ] Is there a space in the lab for ous?
 
 ## MPLS
 
