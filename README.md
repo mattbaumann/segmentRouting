@@ -11,6 +11,7 @@ This documentation can be viewed with [VuePress](https://vuepress.vuejs.org) or 
 * [ ] Where can we test our routes?
 * [ ] At which address are the routers?
 * [ ] Is there a space in the lab for ous?
+* [ ] We logged in server (sr-000035) and it was an empty ubuntu server? What do we need to do with it? I expected cisco software in order to have a web-gui to manage the network?
 
 ## MPLS
 
