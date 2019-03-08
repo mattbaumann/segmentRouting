@@ -35,7 +35,7 @@ Over ISIS is an MPLS network overlay (data plane) with an BGP (control plane)  f
 
 ## REST Command
 
-Die erste Aufgabenstellung ist diesen Command aus Aufgabenstellung 10 zum laufen zu bringen:
+The first assignment is to get the following command from the document 10 running:
 
 ``` js
 {
@@ -49,3 +49,25 @@ Die erste Aufgabenstellung ist diesen Command aus Aufgabenstellung 10 zum laufen
 }
 
 ```
+
+## IOS XR 8 API
+
+YANG-Models describe the API of a network device. This model can be used to validate a REST command against the specification.
+
+```text
+::: warning
+Even though a command is valid acording to the YANG model, does not mean that it is implemented in the software of a network controller.
+:::
+```
+
+The [pyang python library](https://github.com/mbj4668/pyang) can be used to generate the backend-code from a YANG model.
+
+To get the library use the following command:
+
+```bash
+pip install pyang
+```
+
+### IOS XR 8 Configuration
+
+See the following [cisco XTC configuration guide](./guides/XTCConfiguration.pdf).
