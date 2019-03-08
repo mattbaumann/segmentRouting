@@ -54,11 +54,9 @@ The first assignment is to get the following command from the document 10 runnin
 
 YANG-Models describe the API of a network device. This model can be used to validate a REST command against the specification.
 
-```text
 ::: warning
 Even though a command is valid acording to the YANG model, does not mean that it is implemented in the software of a network controller.
 :::
-```
 
 The [pyang python library](https://github.com/mbj4668/pyang) can be used to generate the backend-code from a YANG model.
 
