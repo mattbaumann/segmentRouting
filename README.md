@@ -72,3 +72,22 @@ To view the entire YANG structure the [Advanced NETCONF Explorer](https://github
 
 See the following [cisco XTC configuration guide](./guides/XTCConfiguration.pdf).
 
+### Commands
+``` 
+show segment-routing traffic-engineering policy
+show isis neighbors
+show pce association
+show mpls forwarding-table
+show cdp neighbors
+```
+
+Connection IP-Address: 
+- 99.1.2.0/24
+- 99.1.3.0/24
+
+Bei MPLS ist das Local Label das Label des nächsten Routers.
+Der Fallback des Segment Routing ist iBGP.
+PCEP funktioniert nach dem Client/Server Verhalten.
+PCC = Path Computing Client
+PCE = Path Computing Engine
+PCEP = Path Computing Engine Protocol
