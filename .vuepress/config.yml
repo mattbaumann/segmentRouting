@@ -5,8 +5,8 @@ base: '/segmentRouting/'
 themeConfig:
     sidebar:
         - title: 'Main Part'
-        - collapsilbe: false
-        - children:
+          collapsilbe: false
+          children:
             - '/'
         
         - title: 'Appendix'
