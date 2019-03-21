@@ -1,3 +1,15 @@
 title: 'ChallProj'
 description: 'Segment Routing'
 base: '/segmentRouting/'
+
+themeConfig:
+    sidebar:
+        - title: 'Main Part'
+        - collapsilbe: false
+        - children:
+            - '/'
+        
+        - title: 'Appendix'
+          collapsilbe: true
+          children:
+            - 'appendix/links'
