@@ -8,6 +8,7 @@ themeConfig:
           collapsilbe: false
           children:
             - '/'
+            - '/content/xml_api'
         
         - title: 'Appendix'
           collapsilbe: true
