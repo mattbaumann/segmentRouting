@@ -11,7 +11,7 @@ themeConfig:
             - '/content/xml_api'
             - '/content/net_conf'
             - '/content/rest_conf'
-            - '/content/yang
+            - '/content/yang'
         
         - title: 'Appendix'
           collapsilbe: true
