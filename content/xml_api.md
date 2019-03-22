@@ -13,7 +13,7 @@ This API was the first automation concept introduced back in 2005. As it is the 
 * Undocumented and complicated API
 * Customer-specific, no generality
 
-The [Cisco IOS XR XML API Guide](/guides/XRXMLAPIGuide.pdf) explains the details of the API Standard.
+The [Cisco IOS XR XML API Guide](/segmentRouting/guides/XRXMLAPIGuide.pdf) explains the details of the API Standard.
 
 ## API
 
