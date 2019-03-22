@@ -54,3 +54,44 @@ Operation response data returned here
 ```
 
 The operation tag contains the actual operation command.
+
+## pyiosxr
+
+Activate the XML API on the target device:
+
+```shell
+xml agent tty iteration off
+```
+
+Then you can use [pyiosxr](https://github.com/fooelisa/pyiosxr) to configure the router by connecting to it and unlocking it's *running configuration*:
+
+```python
+from pyIOSXR import IOSXR
+device = IOSXR(hostname='lab001', username='ejasinska', password='passwd', port=22, timeout=120)
+device.open()
+```
+
+ The device object can be used to upload a newer configuration:
+
+```python
+device.load_candidate_config(filename='unit/test/config.txt')
+```
+
+Or print a diff of a local and running configuration after the local configuration was loaded above:
+
+```python
+device.compare_config()
+```
+
+The following command prints the running configuration of the router:
+
+```python
+device.get_candidate_config(merge=False, formal=False)
+```
+
+PyIOSXR allows also to read out show commands by calling `device.show_...` commands:
+
+```python
+device.show_interfaces()
+```
+
