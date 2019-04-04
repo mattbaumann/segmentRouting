@@ -12,6 +12,7 @@ themeConfig:
             - '/content/net_conf'
             - '/content/rest_conf'
             - '/content/yang'
+            - '/content/xr_config'
         
         - title: 'Appendix'
           collapsilbe: true
