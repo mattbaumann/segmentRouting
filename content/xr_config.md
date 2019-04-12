@@ -18,3 +18,7 @@ Do not try to install PIE packages. You have to RPM install the package.
 	```RP/0/RP0/CPU0:XTC-A(config)#ssh server v2```
 4. Commit changes
 	```RP/0/RP0/CPU0:XTC-A(config)#commit```
+
+::: danger STOP
+Do not try to reload the IOS XR Router, it will lose the k9sec package and you have to install it again...
+:::
