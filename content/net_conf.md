@@ -20,6 +20,21 @@ The NETCONF API is the public standard born 2006 from the Cisco *IOS XR XML API*
 
 See [Netconf Config Guide](https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/data-models/guide/b-data-models-config-guide-asr9000/b-data-odels-config-guide-asr9000_chapter_01.html)
 
+```bash
+ssh server v2
+ssh server netconf
+netconf agent tty
+netconf-yang agent ssh
+```
+
+## ANX Advanced Netconf Explorer
+
+To view the entire YANG structure the [Advanced NETCONF Explorer](https://github.com/cisco-ie/anx) generates the entire tree installed on the controller.
+
+Address of the router: <IP>:830
+
+
+
 ## ncclient
 
 *ncclient* is a python library for connecting to a router over the NETCONF protocol. 

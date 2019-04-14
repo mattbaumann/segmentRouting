@@ -66,8 +66,6 @@ To get the library use the following command:
 pip install pyang
 ```
 
-To view the entire YANG structure the [Advanced NETCONF Explorer](https://github.com/cisco-ie/anx) generates the entire tree installed on the controller.
-
 ### IOS XR 8 Configuration
 
 See the following [cisco XTC configuration guide](./guides/XTCConfiguration.pdf).
