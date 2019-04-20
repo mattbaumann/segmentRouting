@@ -71,3 +71,43 @@ with manager.connect(host=ios_xe1["address"], port=ios_xe1["port"], username=ios
     print("...")
 ```
 
+
+
+## NETCONF Example
+
+In this example, we will read the time from an IOS-XR Router.
+
+```python
+# import providers, services and models
+from ydk.services import CRUDService
+from ydk.providers import NetconfServiceProvider
+from ydk.models.cisco_ios_xr import Cisco_IOS_XR_shellutil_oper as xr_shellutil_oper
+from datetime import timedelta
+
+
+if __name__ == "__main__":
+   """Main execution path"""
+
+   # create NETCONF session
+   provider = NetconfServiceProvider(address="10.20.0.170",
+                                     port=22,
+                                     username="system",
+                                     password="system",
+                                     protocol="ssh")
+   # create CRUD service
+   crud = CRUDService()
+
+   # create system time object
+   system_time = xr_shellutil_oper.SystemTime()
+
+   # read system time from device
+   system_time = crud.read(provider, system_time)
+
+   # print system uptime
+   print("System uptime is " + str(timedelta(seconds=system_time.uptime.uptime)))
+   print(str(system_time.clock.time_zone))
+
+   exit()
+```
+
+If you want to get any information from a device using NETCONF/YANG, first visualize the YANG model using pyang. Then you just have to follow the tree to get the desired information. For example if you want t get the current uptime, execute `system_time.uptime.uptime`.

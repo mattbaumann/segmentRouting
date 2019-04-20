@@ -153,3 +153,35 @@ First you need to download the current YANG models from the public [yang-model r
 
 In our case, we will use the XR 651 models, which fit to our Cisco IOS XR 6.5.1 operating system.
 
+## Visualizing YANG models
+
+First, you have to install the pyang program. To do so, execute the following commands:
+
+```bash
+git clone https://github.com/mbj4668/pyang
+cd pyang
+source env.sh
+```
+
+After that, you can use pyang to visualize a YANG model. Use `-f tree` to get a clear presentation of the YANG model.
+
+```
+pyang -f tree Cisco-IOS-XR-shellutil-oper.yang
+module: Cisco-IOS-XR-shellutil-oper
+ +--ro system-time
+    +--ro clock
+    |  +--ro year?          uint16
+    |  +--ro month?         uint8
+    |  +--ro day?           uint8
+    |  +--ro hour?          uint8
+    |  +--ro minute?        uint8
+    |  +--ro second?        uint8
+    |  +--ro millisecond?   uint16
+    |  +--ro wday?          uint16
+    |  +--ro time-zone?     string
+    |  +--ro time-source?   Time-source
+    +--ro uptime
+       +--ro host-name?   string
+       +--ro uptime?      uint32
+```
+
