@@ -39,7 +39,7 @@ subscription Subscription1
 
 `sh telemetry model-driven sensor-group InternalDataAquisitionSensorGroup` should now return all sensors and whether they are resolved.
 
-::: info
+::: tip
 
 You must wait at least the duration of `sample-interval` until the sensor-paths are resolved. Obviously, the sensors are accessed after the first sample interval terminated. After the first access, the router software knows whether the sensors actually exist.
 
