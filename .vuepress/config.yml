@@ -2,6 +2,9 @@ title: 'ChallProj'
 description: 'Segment Routing'
 base: '/segmentRouting/'
 
+markdown:
+        lineNumbers: true
+
 themeConfig:
     sidebar:
         - title: 'Main Part'
