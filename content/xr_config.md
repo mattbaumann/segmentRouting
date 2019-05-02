@@ -22,23 +22,3 @@ Do not try to install PIE packages. You have to RPM install the package.
 ::: danger STOP
 Do not try to reload the IOS XR Router, it will lose the k9sec package and you have to install it again...
 :::
-
-## Enable Cisco Telemtry
-Model Driven Telemetry helps to gain real-time information of what is going on in the network.
-1. Enable telemetry:  
-	```RP/0/RP0/CPU0:XTC-A(config)#telemetry model-driven```
-2. Create a destination-group:  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven)#destination-group challpDestination```
-3. Add IP address, encoding and protocol to the destination-group:  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-dest)#address-family ipv4 152.96.9.106 port 5432```  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-dest)#encoding json```  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-dest)#protocol udp```
-4. Create a sensor-group:  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven)#sensor-group challpSource```
-5. Add a sensor-path (path to the yang model):  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-snsr-grp)#sensor-path Cisco-IOS-XR-segment-routing-ms-oper:srms```
-6. Add a subscription:  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven)#subscription challpSubscription```
-6. Create a sensor-group:  
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-subs)#sensor-group-id challpSource sample-interval 30000```
-	```RP/0/RP0/CPU0:XTC-A(config-model-driven-subs)#destination-id challpDestination```
