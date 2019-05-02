@@ -39,7 +39,7 @@ Model Driven Telemetry helps to gain real-time information of what is going on i
 	```RP/0/RP0/CPU0:XTC-A(config-model-driven-subs)#sensor-group-id challpSource sample-interval 30000```
 	```RP/0/RP0/CPU0:XTC-A(config-model-driven-subs)#destination-id challpDestination```
 
-`sh telemetry model-driven sensor-group InternalDataAquisitionSensorGroup` should now return all sensors and whether they are resolved.
+`show telemetry model-driven sensor-group InternalDataAquisitionSensorGroup` should now return all sensors and whether they are resolved.
 
 ::: tip
 
