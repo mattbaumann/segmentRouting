@@ -2,6 +2,9 @@ title: 'ChallProj'
 description: 'Segment Routing'
 base: '/segmentRouting/'
 
+markdown:
+        lineNumbers: true
+
 themeConfig:
     sidebar:
         - title: 'Main Part'
@@ -12,6 +15,7 @@ themeConfig:
             - '/content/net_conf'
             - '/content/rest_conf'
             - '/content/yang'
+            - '/content/streamingTelemetry'
             - '/content/xr_config'
         
         - title: 'Appendix'
